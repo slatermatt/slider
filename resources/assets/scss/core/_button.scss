@@ -1,0 +1,18 @@
+button {
+	&:focus {
+		@apply outline-none;
+	}
+}
+
+.e-button {
+	@apply
+		relative
+		p-4
+		bg-brand-red
+		text-white
+		font-body
+		text-base
+		font-normal
+		leading-none
+		no-underline;
+}

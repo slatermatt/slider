@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Purpose:
+#
+# Runs frontend watch task in the build container.
+
+set -e
+[ -z "${DEBUG}" ] || set -x
+
+cd "$(dirname "$0")/.."
+
+./scripts/build yarn run watch
